@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MobileRadioAdAway</string>
+    <string name="xposed_description">Mobile Radio App Ad Away</string>
+    <string-array name="scope">
+        <item>com.vb.mirchiplay</item>
+    </string-array>
+</resources>
