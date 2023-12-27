@@ -47,6 +47,7 @@ public class Xposed implements IXposedHookLoadPackage {
         final Class<?> clazz = XposedHelpers.findClass(className, lpParam.classLoader);
         if (clazz == null) {
             XposedBridge.log("Unable to find the class :: " + className + " to hook");
+            return;
         }
         XposedBridge.hookAllMethods(clazz, "showads", XC_MethodReplacement.DO_NOTHING);
         XposedBridge.hookAllMethods(clazz, "loadad", XC_MethodReplacement.DO_NOTHING);
